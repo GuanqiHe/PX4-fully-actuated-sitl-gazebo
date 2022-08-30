@@ -27,6 +27,10 @@
       <uri>model://long_wall</uri>
       <pose>10 0 2 0 0 0</pose>
     </include>
+    <include>
+      <uri>model://white_board</uri>
+      <pose>9.49 0 2 0 1.5707963 0</pose>
+    </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
       <ode>
@@ -60,5 +64,19 @@
       </camera>
     </gui>
 -->
+     <light name='user_directional_light_0' type='directional'>
+      <pose frame=''>-30.3383 17.444 1 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+
   </world>
 </sdf>

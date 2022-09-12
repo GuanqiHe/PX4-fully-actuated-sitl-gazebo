@@ -9,7 +9,7 @@
         <!-- rear reference point X: -100.044mm, CAD offset: 1001.049mm -->
         <!-- top reference point Z: 33.8663mm, CAD offset: 42.8698mm -->
         <pose>0.001005 0 -0.0090035 0 0 0</pose>
-        <mass>2.02</mass>
+        <mass>2.68</mass>
         <inertia>
           <ixx>0.011</ixx>
           <ixy>0</ixy>
@@ -407,10 +407,10 @@
           <!-- Keep this zero, update_rate in the parent <sensor> tag
                will control the frame rate. -->
           <updateRate>30.0</updateRate>
-          <cameraName>camera_ir</cameraName>
+          <cameraName>camera</cameraName>
           <imageTopicName>color/image_raw</imageTopicName>
           <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
-          <depthImageTopicName>depth/image_raw</depthImageTopicName>
+          <depthImageTopicName>aligned_depth_to_color/image_raw</depthImageTopicName>
           <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
           <pointCloudTopicName>depth/points</pointCloudTopicName>
           <frameName>depth_camera_link</frameName>
@@ -423,7 +423,7 @@
           <distortionT2>0</distortionT2>
           <CxPrime>0</CxPrime>
           <Cx>640</Cx>
-          <Cy>540</Cy>
+          <Cy>640</Cy>
           <focalLength>410.939274</focalLength>
           <hackBaseline>0</hackBaseline>
         </plugin>
